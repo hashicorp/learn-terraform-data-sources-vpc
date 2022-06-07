@@ -1,11 +1,11 @@
 output "lb_security_group_ids" {
   description = "Security group IDs for load balancer"
-  value       = [module.lb_security_group.this_security_group_id]
+  value       = [module.lb_security_group.security_group_id]
 }
 
 output "app_security_group_ids" {
   description = "Security group IDs for application servers"
-  value       = [module.app_security_group.this_security_group_id]
+  value       = [module.app_security_group.security_group_id]
 }
 
 output "public_subnet_ids" {
