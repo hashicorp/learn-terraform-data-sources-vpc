@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "lb_security_group_ids" {
   description = "Security group IDs for load balancer"
   value       = [module.lb_security_group.security_group_id]
